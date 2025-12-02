@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SimpleJUnitTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-12-02T09:30:37.681Z" hostname="MacBook-Pro-kaspi-5.local" time="0.007">
+  <properties/>
+  <testcase name="thirdTest()" classname="SimpleJUnitTest" time="0.005"/>
+  <testcase name="firstTest()" classname="SimpleJUnitTest" time="0.001"/>
+  <testcase name="secondTest()" classname="SimpleJUnitTest" time="0.001"/>
+  <system-out><![CDATA[
+### Before All
+### beforeEach
+###   thirdTest
+### afterEach
+
+### beforeEach
+###   firstTest
+### afterEach
+
+### beforeEach
+###   secondTest
+### afterEach
+
+
+### afterAll
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
