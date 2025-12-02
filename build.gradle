@@ -4,11 +4,14 @@ plugins {
 
 repositories {
         mavenCentral() // https://mvnrepository.com/repos/central - сайт, откуда берем библиотеку selenide
-
     }
 
 dependencies {
     testImplementation(
+            "org.junit.jupiter:junit-jupiter:5.9.3",
             "com.codeborne:selenide:7.12.1" // - последняя версия на сайте mavenCentral, если в поисковике вбить selenide
     )
 }
+ test {
+     useJUnitPlatform() // интеграция зеленой кнопки для запуска кода
+ }
