@@ -6,8 +6,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 
 public class TestBoxTests {
 
@@ -30,12 +29,12 @@ public class TestBoxTests {
         $("#userEmail").setValue(email);
         $("#currentAddress").setValue(currentAddress);
         $("#permanentAddress").setValue(permanentAddress);
-        $("#submit").click();
+        $x("//*[@id=\"submit\"]").click();
 
-        $("#output #userName").shouldHave(text("Name:"+name));
-        $("#output #userEmail").shouldHave(text("Email:"+email));
-        $("#output #currentAddressl").shouldHave(text("Сurrent Address :"+currentAddress));
-        $("#output #permanentAddress").shouldHave(text("Permanent Address :"+permanentAddress));
+        $x("//*[@id=\"name\"]").shouldHave(text(name));
+        $x("//*[@id=\"email\"]").shouldHave(text(email));
+        $x("/html/body/div[2]/div/div/div/div[2]/div[2]/form/div[6]/div/p[3]").shouldHave(text(currentAddress));
+        $x("/html/body/div[2]/div/div/div/div[2]/div[2]/form/div[6]/div/p[4]").shouldHave(text(permanentAddress));
 
     }
 }
