@@ -8,8 +8,10 @@ repositories {
 
 dependencies {
     testImplementation(
+            "com.codeborne:selenide:7.12.1", // - последняя версия на сайте mavenCentral, если в поисковике вбить selenide
             "org.junit.jupiter:junit-jupiter:5.9.3",
-            "com.codeborne:selenide:7.12.1" // - последняя версия на сайте mavenCentral, если в поисковике вбить selenide
+            "org.slf4j:slf4j-simple:2.0.17"
+
     )
 }
  test {
