@@ -55,15 +55,13 @@ public class PracticeFormTests {
 
         // Выбор значения из выпадающего списка #1
         $x("//*[@id=\"state\"]").click();
-        $$(".css-26l3qy-menu div")
-                .findBy(exactText("Haryana")) // exactText ищет ровно "Haryana", без лишних пробелов и других символов
-                .click();
+        $$(".css-26l3qy-menu div").findBy(exactText("Haryana")).click();
+        // exactText ищет ровно "Haryana", без лишних пробелов и других символов
+
 
         // Выбор значения из выпадающего списка #2
         $x("//*[@id=\"city\"]/div/div[1]/div[1]").click();
-        $$(".css-26l3qy-menu div")
-                .findBy(exactText("Karnal"))
-                .click();
+        $$(".css-26l3qy-menu div").findBy(exactText("Karnal")).click();
 
         $("#submit").click();
 
