@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.PracticeFormTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-12-04T12:23:38.590Z" hostname="MacBook-Pro-kaspi-5.local" time="3.1">
+<testsuite name="tests.PracticeFormTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-12-05T12:23:22.713Z" hostname="MacBook-Pro-kaspi-5.local" time="11.109">
   <properties/>
-  <testcase name="fillFormTest()" classname="tests.PracticeFormTests" time="3.1"/>
+  <testcase name="fillFormTest()" classname="tests.PracticeFormTests" time="11.109"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[[Test worker] INFO com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
-[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.12.1 / Selenium 4.38.0 / chrome 142.0.7444.176 mac
-[Test worker] INFO com.codeborne.selenide.WebDriverThreadLocalContainer - Browser will stay open due to holdBrowserOpen=true: 1 -> ChromeDriver: chrome on mac (b6be2bb3f18de1ca60a436707a1edc9a)
+дек. 05, 2025 5:23:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 143, returning the closest version; found: 142; Please update to a Selenium version that supports CDP version 143
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.12.1 / Selenium 4.38.0 / chrome 143.0.7499.40 mac
+[Test worker] INFO com.codeborne.selenide.WebDriverThreadLocalContainer - Browser will stay open due to holdBrowserOpen=true: 1 -> ChromeDriver: chrome on mac (e8b5dc8a44c128ceb835a69d05d75931)
 ]]></system-err>
 </testsuite>
