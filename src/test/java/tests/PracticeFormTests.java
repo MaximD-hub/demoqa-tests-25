@@ -37,7 +37,8 @@ public class PracticeFormTests {
         $("[placeholder='Last Name']").setValue(lastName);
         $("[placeholder='name@example.com']").setValue(email);
         $("[for='gender-radio-1']").click(); //Выбор пола, клик по самому "Male"
-        $("[placeholder='Mobile Number']").setValue(String.valueOf(mobile)); //setValue() - принимает только строковые значения, String.valueOf() - преобразует любой тип данных
+        $("[placeholder='Mobile Number']").setValue(String.valueOf(mobile));
+        //setValue() - принимает только строковые значения, String.valueOf() - преобразует любой тип данных
 
         // Выпадающий текст
         $("#dateOfBirthInput").click();
@@ -49,7 +50,7 @@ public class PracticeFormTests {
         $("[for='hobbies-checkbox-3']").click();
 
         // Загрузка файла с компьютера
-        $("#uploadPicture").uploadFile(new File("/Users/kaspi/Desktop/gnunvna-dpyr8dzj9gwsh-xinlm.jpeg"));
+        $("#uploadPicture").uploadFile(new File("/Users/kaspi/Desktop/image.jpeg"));
 
         $("[placeholder='Current Address'").setValue(currentAdress);
 
